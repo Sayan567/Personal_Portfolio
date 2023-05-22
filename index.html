@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Sayan Chakraborty</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/00b17029b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="scripts.js"></script> -->
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo1.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!-- <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span id="typed-text">Sayan</span> Chakraborty</h1>
+        </div> -->
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm<br/> <span id="typed-text"></span></h1>
+          </div>
+          
+      </div>
+    </div>
+    <!-- ------------------------About--------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+              deleniti at corrupti quo consequatur illum placeat impedit laborum
+              id, totam cum repudiandae iure. Provident illo eligendi aliquam
+              dolores sequi vel.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certificates')">
+                Certificates
+              </p>
+            </div>
+            <div class="tab-contains active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />Developing Web/App
+                  interfaces
+                </li>
+                <li>
+                  <span>Data Analyst</span><br />Analysis, Analyze, and
+                  Technology
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contains" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - 2022</span><br />MIS Intern at Newton School
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contains" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br />MCA From Kalinga Institute Of
+                  Industrial Technology
+                </li>
+                <li>
+                  <span>2022</span><br />B.Sc. IT From Techno India University
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contains" id="certificates">
+              <ul>
+                <li>
+                  <span>2023</span><br />JavaScript Intermediate - Hackerrank
+                </li>
+                <li><span>2023</span><br />SQL Advance - Hackerrank</li>
+                <li>
+                  <span>2023</span><br />Business Analyst - Aspiring Minds
+                </li>
+                <li>
+                  <span>2022</span><br />Certificate of Excellence DSA With Java
+                  - Coding Ninjas
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------services----------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>As a frontend developer, my expertise lies in creating captivating and user-friendly interfaces for websites and web applications.<br><br>I bring creativity and technical skills to transform designs into functional and visually appealing digital experiences.<br><br>Key Skills: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/Sayan567?tab=repositories"  class="btn btn2">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h2>Data Analysis</h2>
+            <p>As a data analyst, I possess a strong analytical mindset and expertise in deriving insights from complex data sets. <br><br>With a deep understanding of statistical analysis, data visualization, and data manipulation techniques, I am skilled in translating data into actionable recommendations.<br><br>Key Skills: Python, SQL, Tableau, Ms-Excel</p>
+            <a href="https://github.com/Sayan567?tab=repositories" id="learn" class="btn btn2">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------portfolio-------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Spotify Clone</h3>
+              <p>
+                Spotify clone is a music streaming platform that helps you gain
+                an advantage in the lucrative streaming industry. An app similar
+                to Spotify helps you offer millions of songs of different genres
+                to users.
+              </p>
+              <br />
+              <p>Tech Stack - HTML, CSS, JavaScript</p>
+              <a href="https://github.com/Sayan567/Spotify-Clone-Frontend"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>
+                A calculator is a device that performs arithmetic operations on
+                numbers. Basic calculators can do only addition, subtraction,
+                multiplication and division mathematical calculations.
+              </p>
+              <br />
+              <p>Tech Stack - HTML, CSS, JavaScript</p>
+              <a href="https://github.com/Sayan567/Calculator-Using-JavaScript"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Hotel Booking Analysis</h3>
+              <p>
+                This project contains the real world data record of hotel
+                bookings of a city and a resort hotel containing details like
+                bookings, cancellations, guest details etc.
+              </p>
+              <br />
+              <p>Tech Stack - Python</p>
+              <a href="https://github.com/Sayan567/Hotel-Booking-Analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+      </div>
+    </div>
+    <!-- -------------------------contact---------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>sayan.malda2.sc@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91-8637834988</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100009090578482"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sayan567/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/sayan567"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1ohYl8dqWrRFxv_5xUyTs-_HxqTNxJmHo/view?usp=sharing"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2023 @ Sayan.</p>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------JavaScript--------------------------------------------------- -->
+<!-- ----------------------------------------for side menu in mobile---------------------------------------------------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontains = document.getElementsByClassName("tab-contains");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontain of tabcontains) {
+          tabcontain.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <!-- -------------------------------Connecting google sheet-------------------------------- -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyXOx2Xt6gzPN0skJyhRP3GU09FdezYyN7-eVasRTdAhPuzMonyYqoIw948RwEGKoSG/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            },1000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <!-- --------------Header name typing----------------------------- -->
+    <!-- <script>
+        const textElement = document.getElementById('typed-text');
+        const text = "Sayan Chakraborty.";
+        
+        function typeWriter(text, index) {
+          if (index < text.length) {
+            textElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(() => {
+              typeWriter(text, index);
+            }, 100);
+          }
+        }
+        typeWriter(text, 0);
+    </script> -->
+    <script>
+        const textElement = document.getElementById('typed-text');
+        const text = "Sayan Chakraborty.";
+      
+        function typeWriter(text, index) {
+          if (index < text.length) {
+            textElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(() => {
+              typeWriter(text, index);
+            }, 100);
+          } else {
+            setTimeout(() => {
+              eraseText();
+            }, 1000); // Wait for 1 second before starting the erasing process
+          }
+        }
+      
+        function eraseText() {
+          const currentText = textElement.innerHTML;
+          if (currentText.length > 0) {
+            textElement.innerHTML = currentText.slice(0, -1);
+            setTimeout(() => {
+              eraseText();
+            }, 50);
+          } else {
+            setTimeout(() => {
+              typeWriter(text, 0);
+            }, 500); // Wait for 0.5 seconds before starting typing again
+          }
+        }
+      
+        typeWriter(text, 0);
+      </script>
+  </body>
+</html>
