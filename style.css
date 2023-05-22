@@ -245,25 +245,31 @@ nav ul li a:hover::after {
   color: #000;
 }
 .header-text h1 span {
-    display: inline-block;
-    overflow: hidden;
-    width: fit-content; /* Adjust the width to fit the text */
-    position: relative; /* Add relative positioning */
+  display: inline-block;
+  overflow: hidden;
+  width: fit-content; /* Adjust the width to fit the text */
+  position: relative; /* Add relative positioning */
+}
+.header-text h1 span::before {
+  content: "|";
+  position: absolute;
+  right: -2px; /* Adjust the position of the cursor */
+  animation: blinkCursor 0.7s infinite;
+  opacity: 1;
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 0;
   }
-  .header-text h1 span::before {
-    content: "|";
-    position: absolute;
-    right: -2px; /* Adjust the position of the cursor */
-    animation: blinkCursor 0.7s infinite;
+  50% {
     opacity: 1;
   }
-  
-  @keyframes blinkCursor {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+  100% {
+    opacity: 0;
   }
-  
+}
+
 /* ---------------------conatct------------------------ */
 .contact-left {
   flex-basis: 35%;
@@ -396,4 +402,137 @@ nav .fas {
   color: #61b752;
   margin-top: -40px;
   display: block;
+}
+@media only screen and (max-width: 324px) {
+  .logo {
+    display: none;
+  }
+  #header {
+    width: 130%;
+    height: 10%;
+    background-image: url(images/phone-background.png);
+    background-position: center;
+  }
+
+  .header-text {
+    margin-top: 100%;
+    font-size: 14px;
+  }
+  .header-text h1 {
+    font-size: 24px;
+  }
+  nav .fas {
+    display: block;
+    font-size: 20px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -180px;
+    width: 180px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 32px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 20px;
+  }
+  .about-col-2 {
+    font-size: 12px;
+  }
+  .tab-links {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .logo {
+    display: none;
+  }
+  #header {
+    width: 100%;
+    background-image: url(images/phone-background.png);
+  }
+  .header-text {
+    margin-top: 100%;
+    font-size: 14px;
+  }
+  .header-text h1 {
+    font-size: 24px;
+  }
+  nav .fas {
+    display: block;
+    font-size: 20px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -175px;
+    width: 175px;
+    height: 100vh;
+    padding-top: 40px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 32px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 20px;
+  }
+  .about-col-2 {
+    font-size: 12px;
+  }
+  .tab-links {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 12px;
+  }
 }
