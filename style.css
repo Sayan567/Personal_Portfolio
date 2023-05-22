@@ -242,6 +242,7 @@ nav ul li a:hover::after {
 }
 .btn:hover {
   background: #ff004f;
+  color: #000;
 }
 .header-text h1 span {
     display: inline-block;
