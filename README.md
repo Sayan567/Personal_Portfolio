@@ -19,12 +19,17 @@ Resume/CV: Provide a downloadable version of my resume or CV.
 Contact: Offer a contact form for visitors to get in touch with me.
 
 Responsive Design: Ensure the website is visually appealing and functional across various devices and screen sizes.
+
 Easy Customization: The code is well-structured and organized, making it easy to modify and customize to fit my needs.
 Technologies Used
+
 HTML5 and CSS3: Markup and styling of the website.
+
 JavaScript: Implement interactive elements and enhance user experience.
+
 Git: Version control for tracking changes and collaborating with others.
-Deployment
+
+Deployment :
 I have deployed my personal portfolio website on a web server. The live version can be accessed at [https://sayan567-portfolio.netlify.app/].
 
 Contributing
